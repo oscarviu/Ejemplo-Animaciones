@@ -16,6 +16,6 @@ public class Orc : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		box.center = new Vector3(box.center.x, box.center.y, anim.GetFloat("AttackDistance") * original_z * 6);
+		box.center = new Vector3(box.center.x, box.center.y, original_z + anim.GetFloat("AttackDistance") * 2);
 	}
 }
